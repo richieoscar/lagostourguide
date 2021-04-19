@@ -98,7 +98,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:src="@drawable/ic_baseline_location_on_24"
-            android:tint="#C9000000"
+            android:tint="#83000000"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
@@ -144,7 +144,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:src="@drawable/ic_baseline_phone_24"
-            android:tint="#C9000000"
+            android:tint="#80000000"
             app:layout_constraintStart_toStartOf="@+id/imageView11"
             app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
@@ -154,7 +154,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:src="@drawable/ic_baseline_access_time_24"
-            android:tint="#C9000000"
+            android:tint="#83000000"
             app:layout_constraintStart_toStartOf="@+id/imageView12"
             app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
@@ -163,7 +163,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="8dp"
             android:background="@drawable/button_outline"
             android:backgroundTint="#00FFFFFF"
@@ -176,7 +176,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+            app:layout_constraintTop_toBottomOf="@+id/openHours" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

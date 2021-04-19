@@ -20,7 +20,7 @@ import com.richieoscar.tourguide.databinding.ActivityTourGuideBinding;
 public class TourGuideActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
-    ActivityTourGuideBinding binding;
+    private ActivityTourGuideBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

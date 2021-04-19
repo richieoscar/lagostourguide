@@ -38,13 +38,13 @@
             app:layout_constraintTop_toBottomOf="@+id/image" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:text="Nature Reserve"
-            android:textColor="#C6000000"
+            android:textColor="#8F000000"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/name" />
@@ -79,7 +79,7 @@
             android:src="@drawable/ic_baseline_star_rate_24"
             android:tint="#FBC02D"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/description" />
 
         <ImageView
             android:id="@+id/imageView10"
@@ -107,6 +107,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:text="TextView"
             android:textColor="#D0000000"
             android:textSize="16sp"
@@ -141,7 +142,7 @@
             android:id="@+id/imageView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:src="@drawable/ic_baseline_phone_24"
             android:tint="#C9000000"
             app:layout_constraintStart_toStartOf="@+id/imageView11"
@@ -160,16 +161,22 @@
         <Button
             android:id="@+id/showDirection"
             android:layout_width="0dp"
-            android:layout_height="57dp"
+            android:layout_height="50dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="8dp"
-            android:text="Directions"
+            android:background="@drawable/button_outline"
+            android:backgroundTint="#00FFFFFF"
+            android:drawableLeft="@drawable/ic_basedirection"
+            android:text="@string/directions"
             android:textAllCaps="false"
+            android:textColor="@color/primaryLightColor"
+            android:textSize="18sp"
             app:cornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

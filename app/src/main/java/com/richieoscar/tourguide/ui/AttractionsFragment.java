@@ -1,18 +1,16 @@
 package com.richieoscar.tourguide.ui;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.richieoscar.tourguide.R;
 import com.richieoscar.tourguide.adapters.TourGuideAdapter;
@@ -35,7 +33,7 @@ public class AttractionsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         TourGuideAdapter adapter = new TourGuideAdapter(DataManager.getCenteres(), view.getContext());
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(view.getContext(),binding.centreRecyclerView.VERTICAL, false);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(view.getContext(), binding.centreRecyclerView.VERTICAL, false);
         DividerItemDecoration decoration = new DividerItemDecoration(view.getContext(), linearLayoutManager.getOrientation());
         binding.centreRecyclerView.setLayoutManager(linearLayoutManager);
         binding.centreRecyclerView.setAdapter(adapter);
@@ -46,7 +44,7 @@ public class AttractionsFragment extends Fragment {
     public void onResume() {
         super.onResume();
         TourGuideActivity activity = (TourGuideActivity) getActivity();
-        if (activity!=null){
+        if (activity != null) {
             activity.hideUpButton();
         }
     }

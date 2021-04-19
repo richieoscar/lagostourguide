@@ -1,6 +1,9 @@
 package com.richieoscar.tourguide.ui;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -8,10 +11,6 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.richieoscar.tourguide.R;
 import com.richieoscar.tourguide.adapters.TourGuideAdapter;
@@ -28,14 +27,14 @@ public class TheatreFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_theatre, container, false);
-        return  binding.getRoot();
+        return binding.getRoot();
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        TourGuideAdapter adapter = new TourGuideAdapter(DataManager.theaters(),view.getContext());
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(view.getContext(),binding.theatreRecyclerview.VERTICAL, false);
+        TourGuideAdapter adapter = new TourGuideAdapter(DataManager.theaters(), view.getContext());
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(view.getContext(), binding.theatreRecyclerview.VERTICAL, false);
         DividerItemDecoration decoration = new DividerItemDecoration(view.getContext(), linearLayoutManager.getOrientation());
         binding.theatreRecyclerview.setLayoutManager(linearLayoutManager);
         binding.theatreRecyclerview.setAdapter(adapter);
@@ -45,7 +44,7 @@ public class TheatreFragment extends Fragment {
     public void onResume() {
         super.onResume();
         TourGuideActivity activity = (TourGuideActivity) getActivity();
-        if (activity!=null){
+        if (activity != null) {
             activity.hideUpButton();
         }
     }

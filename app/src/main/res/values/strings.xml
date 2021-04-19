@@ -3,4 +3,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="attractions">Attractions</string>
+    <string name="home_description">The city of fun and excitement\nMake it an Experience of a Life Time</string>
+    <string name="lagos_city">Lagos City</string>
+    <string name="top_centres">Top Centres</string>
+    <string name="lagos">Lagos</string>
+    <string name="top_beaches">Top Beaches</string>
+    <string name="directions">Directions</string>
+    <string name="top_hotels">Top Hotels</string>
+    <string name="top_cinemas">Top Cinemas</string>
 </resources>

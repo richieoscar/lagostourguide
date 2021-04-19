@@ -24,6 +24,7 @@ public class DetailsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        setHasOptionsMenu(true);
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_details, container, false);
         Attraction attraction = getArguments().getParcelable("Item");
         binding.name.setText(attraction.getName());
@@ -31,12 +32,13 @@ public class DetailsFragment extends Fragment {
         binding.openHours.setText(attraction.getOpenHours());
         binding.phone.setText(attraction.getPhoneNumber());
         binding.image.setImageResource(attraction.getImage());
+        binding.description.setText(attraction.getClass().getSimpleName());
         binding.showDirection.setOnClickListener(v -> {
             showDirections(binding.name.getText().toString());
         });
         return binding.getRoot();
     }
-    
+
     @Override
     public void onResume() {
         super.onResume();
@@ -61,6 +63,8 @@ public class DetailsFragment extends Fragment {
         String format = "geo:0,0?q=" + name;
         Uri uri = Uri.parse(format);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        if(intent.resolveActivity(getActivity().getPackageManager()) != null){
         startActivity(intent);
+        }
     }
 }

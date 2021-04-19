@@ -33,7 +33,6 @@ public class HotelsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         TourGuideAdapter adapter = new TourGuideAdapter(DataManager.hotels(), view.getContext());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(view.getContext(), binding.hotelsRecyclerview.VERTICAL, false);
-        DividerItemDecoration decoration = new DividerItemDecoration(view.getContext(), linearLayoutManager.getOrientation());
         binding.hotelsRecyclerview.setLayoutManager(linearLayoutManager);
         binding.hotelsRecyclerview.setAdapter(adapter);
     }

@@ -34,10 +34,8 @@ public class AttractionsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         TourGuideAdapter adapter = new TourGuideAdapter(DataManager.getCenteres(), view.getContext());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(view.getContext(), binding.centreRecyclerView.VERTICAL, false);
-        DividerItemDecoration decoration = new DividerItemDecoration(view.getContext(), linearLayoutManager.getOrientation());
         binding.centreRecyclerView.setLayoutManager(linearLayoutManager);
         binding.centreRecyclerView.setAdapter(adapter);
-        TourGuideActivity activity = (TourGuideActivity) getActivity();
     }
 
     @Override

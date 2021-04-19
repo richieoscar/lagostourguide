@@ -35,7 +35,6 @@ public class TheatreFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         TourGuideAdapter adapter = new TourGuideAdapter(DataManager.theaters(), view.getContext());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(view.getContext(), binding.theatreRecyclerview.VERTICAL, false);
-        DividerItemDecoration decoration = new DividerItemDecoration(view.getContext(), linearLayoutManager.getOrientation());
         binding.theatreRecyclerview.setLayoutManager(linearLayoutManager);
         binding.theatreRecyclerview.setAdapter(adapter);
     }

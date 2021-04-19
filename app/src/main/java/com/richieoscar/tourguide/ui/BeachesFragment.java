@@ -33,7 +33,6 @@ public class BeachesFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         TourGuideAdapter adapter = new TourGuideAdapter(DataManager.beaches(), view.getContext());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(view.getContext(), binding.beachRecyclerview.VERTICAL, false);
-        DividerItemDecoration decoration = new DividerItemDecoration(view.getContext(), linearLayoutManager.getOrientation());
         binding.beachRecyclerview.setLayoutManager(linearLayoutManager);
         binding.beachRecyclerview.setAdapter(adapter);
     }

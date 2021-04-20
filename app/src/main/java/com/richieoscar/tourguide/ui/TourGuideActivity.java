@@ -49,7 +49,7 @@ public class TourGuideActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.about:
                 Toast.makeText(this, "Best City Tour App", Toast.LENGTH_SHORT).show();
         }

@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.richieoscar.tourguide.R;
@@ -31,7 +30,7 @@ public class BeachesFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        TourGuideAdapter adapter = new TourGuideAdapter(DataManager.beaches(), view.getContext());
+        TourGuideAdapter adapter = new TourGuideAdapter(DataManager.beaches(getContext()), view.getContext());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(view.getContext(), binding.beachRecyclerview.VERTICAL, false);
         binding.beachRecyclerview.setLayoutManager(linearLayoutManager);
         binding.beachRecyclerview.setAdapter(adapter);

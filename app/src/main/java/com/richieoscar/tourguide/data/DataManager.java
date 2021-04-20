@@ -17,23 +17,24 @@ public class DataManager {
     private static ArrayList<Attraction> centres;
     private static ArrayList<Attraction> theatres;
 
-    public static ArrayList<Attraction> getCenteres(Context context){
+    public static ArrayList<Attraction> getCenteres(Context context) {
         centres = new ArrayList<>();
-        centres.add(new Attraction(context.getString(R.string.lekki_conversation_name), context.getString(R.string.lekki_cov_location),context.getString(R.string.lekki_coversatio_phone), context.getString(R.string.lekki_conversation_open), R.drawable.lekkiconservation));
-        centres.add(new Attraction(context.getString(R.string.nike_art_name), context.getString(R.string.nike_art_location),context.getString(R.string.nike_art_phone), context.getString(R.string.nike_art_open), R.drawable.nikeart));
-        centres.add(new Attraction(context.getString(R.string.national_museum_name), context.getString(R.string.national_museum_location),context.getString(R.string.national_museum_phone), context.getString(R.string.national_museum_open), R.drawable.nationalmuseum));
-        centres.add(new Attraction(context.getString(R.string.freedom_park_name), context.getString(R.string.freedom_park_location),context.getString(R.string.freedom_park_phone), context.getString(R.string.freedom_park_open), R.drawable.freedompark));
-        centres.add(new Attraction(context.getString(R.string.eko_atlantic_name), context.getString(R.string.eko_atlantic_location),context.getString(R.string.eko_atlantic_phone), context.getString(R.string.eko_atlantic_open),R.drawable.ekoatlantic));
-        centres.add(new Attraction(context.getString(R.string.jhalobia_name), context.getString(R.string.jhaloabia_location),context.getString(R.string.jhalobia_phone), context.getString(R.string.jhalobia_open), R.drawable.jhalobia));
-        centres.add(new Attraction(context.getString(R.string.ndubuisi_name), context.getString(R.string.ndubuisi_location),context.getString(R.string.ndubuisi_phone), context.getString(R.string.ndubuis_open), R.drawable.ndubuisipark));
-        centres.add(new Attraction(context.getString(R.string.hiimpact_name), context.getString(R.string.hiimpact_location),context.getString(R.string.hiimpact_phone), context.getString(R.string.hiimpact_open),R.drawable.hiimpact ));
-        centres.add(new Attraction(context.getString(R.string.funfuctory_name), context.getString(R.string.funfactory_location),context.getString(R.string.funfactory_phone), context.getString(R.string.funfactory_open),R.drawable.funfactory));
-        centres.add(new Attraction(context.getString(R.string.kernel_name), context.getString(R.string.kernel_location),context.getString(R.string.kernel_phone), context.getString(R.string.kernel_open),R.drawable.kernelpark));
-        centres.add(new Attraction(context.getString(R.string.muri_name), context.getString(R.string.muri_location),context.getString(R.string.muri_phone), context.getString(R.string.muri_open),R.drawable.muripark));
-        centres.add(new Attraction(context.getString(R.string.johnson_name), context.getString(R.string.johnson_location),context.getString(R.string.johnson_phone), context.getString(R.string.johnson_open),R.drawable.jhalobia));
+        centres.add(new Attraction(context.getString(R.string.lekki_conversation_name), context.getString(R.string.lekki_cov_location), context.getString(R.string.lekki_coversatio_phone), context.getString(R.string.lekki_conversation_open), R.drawable.lekkiconservation));
+        centres.add(new Attraction(context.getString(R.string.nike_art_name), context.getString(R.string.nike_art_location), context.getString(R.string.nike_art_phone), context.getString(R.string.nike_art_open), R.drawable.nikeart));
+        centres.add(new Attraction(context.getString(R.string.national_museum_name), context.getString(R.string.national_museum_location), context.getString(R.string.national_museum_phone), context.getString(R.string.national_museum_open), R.drawable.nationalmuseum));
+        centres.add(new Attraction(context.getString(R.string.freedom_park_name), context.getString(R.string.freedom_park_location), context.getString(R.string.freedom_park_phone), context.getString(R.string.freedom_park_open), R.drawable.freedompark));
+        centres.add(new Attraction(context.getString(R.string.eko_atlantic_name), context.getString(R.string.eko_atlantic_location), context.getString(R.string.eko_atlantic_phone), context.getString(R.string.eko_atlantic_open), R.drawable.ekoatlantic));
+        centres.add(new Attraction(context.getString(R.string.jhalobia_name), context.getString(R.string.jhaloabia_location), context.getString(R.string.jhalobia_phone), context.getString(R.string.jhalobia_open), R.drawable.jhalobia));
+        centres.add(new Attraction(context.getString(R.string.ndubuisi_name), context.getString(R.string.ndubuisi_location), context.getString(R.string.ndubuisi_phone), context.getString(R.string.ndubuis_open), R.drawable.ndubuisipark));
+        centres.add(new Attraction(context.getString(R.string.hiimpact_name), context.getString(R.string.hiimpact_location), context.getString(R.string.hiimpact_phone), context.getString(R.string.hiimpact_open), R.drawable.hiimpact));
+        centres.add(new Attraction(context.getString(R.string.funfuctory_name), context.getString(R.string.funfactory_location), context.getString(R.string.funfactory_phone), context.getString(R.string.funfactory_open), R.drawable.funfactory));
+        centres.add(new Attraction(context.getString(R.string.kernel_name), context.getString(R.string.kernel_location), context.getString(R.string.kernel_phone), context.getString(R.string.kernel_open), R.drawable.kernelpark));
+        centres.add(new Attraction(context.getString(R.string.muri_name), context.getString(R.string.muri_location), context.getString(R.string.muri_phone), context.getString(R.string.muri_open), R.drawable.muripark));
+        centres.add(new Attraction(context.getString(R.string.johnson_name), context.getString(R.string.johnson_location), context.getString(R.string.johnson_phone), context.getString(R.string.johnson_open), R.drawable.jhalobia));
         return centres;
     }
-    public static ArrayList<Attraction> beaches(Context context){
+
+    public static ArrayList<Attraction> beaches(Context context) {
         beaches = new ArrayList<>();
         beaches.add(new Beach(context.getString(R.string.tarkwabay_name), context.getString(R.string.tarkwabay_location), context.getString(R.string.tarkwabay_phone), context.getString(R.string.tarkwabay_open), R.drawable.tarkwabay));
         beaches.add(new Beach(context.getString(R.string.elegushi_name), context.getString(R.string.elegushi_location), context.getString(R.string.elegushi_phone), context.getString(R.string.elegushi_open), R.drawable.elegushi));
@@ -49,7 +50,7 @@ public class DataManager {
         return beaches;
     }
 
-    public static ArrayList<Attraction> hotels (Context context){
+    public static ArrayList<Attraction> hotels(Context context) {
         hotels = new ArrayList<>();
         hotels.add(new Hotel(context.getString(R.string.lagos_atlantic_name), context.getString(R.string.lagos_atlantic_location), context.getString(R.string.lagos_atlantic_phone), context.getString(R.string.lagos_atlantic_open), R.drawable.lagostatlantic));
         hotels.add(new Hotel(context.getString(R.string.sheraton_name), context.getString(R.string.sheraton_location), context.getString(R.string.sheraton_phone), context.getString(R.string.sheraton_open), R.drawable.sheraton));
@@ -67,6 +68,7 @@ public class DataManager {
         hotels.add(new Hotel(context.getString(R.string.galpin_name), context.getString(R.string.galpin_location), "0702501111", context.getString(R.string.galpin_open), R.drawable.aqualuz));
         return hotels;
     }
+
     public static ArrayList<Attraction> theaters(Context context) {
         theatres = new ArrayList<>();
         theatres.add(new Theatre(context.getString(R.string.imax_name), context.getString(R.string.imax_location), context.getString(R.string.imax_phone), context.getString(R.string.imax_open), R.drawable.imaxcinema));

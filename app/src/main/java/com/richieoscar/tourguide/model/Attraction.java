@@ -14,7 +14,7 @@ public class Attraction implements Parcelable {
         return image;
     }
 
-    public Attraction(String name, String location, String phoneNumber, String openHours, int image ) {
+    public Attraction(String name, String location, String phoneNumber, String openHours, int image) {
         this.name = name;
         this.location = location;
         this.phoneNumber = phoneNumber;

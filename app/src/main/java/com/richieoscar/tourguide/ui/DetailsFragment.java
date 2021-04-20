@@ -63,8 +63,8 @@ public class DetailsFragment extends Fragment {
         String format = "geo:0,0?q=" + name;
         Uri uri = Uri.parse(format);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        if(intent.resolveActivity(getActivity().getPackageManager()) != null){
-        startActivity(intent);
+        if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+            startActivity(intent);
         }
     }
 }

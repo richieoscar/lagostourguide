@@ -13,7 +13,7 @@ import com.richieoscar.tourguide.ui.TheatreFragment;
 
 public class TourGuidePagerAdapter extends FragmentPagerAdapter {
 
-   private static final int COUNT = 4;
+    private static final int COUNT = 4;
 
     public TourGuidePagerAdapter(@NonNull FragmentManager fm) {
         super(fm);
@@ -22,15 +22,15 @@ public class TourGuidePagerAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        switch (position){
+        switch (position) {
             case 0:
                 return new AttractionsFragment();
             case 1:
-                return  new TheatreFragment();
+                return new TheatreFragment();
             case 2:
                 return new HotelsFragment();
             case 3:
-                return  new BeachesFragment();
+                return new BeachesFragment();
             default:
                 return null;
         }
@@ -44,7 +44,7 @@ public class TourGuidePagerAdapter extends FragmentPagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        switch (position){
+        switch (position) {
             case 0:
                 return "Centres";
             case 1:
@@ -54,7 +54,7 @@ public class TourGuidePagerAdapter extends FragmentPagerAdapter {
             case 3:
                 return "Beaches";
             default:
-            return super.getPageTitle(position);
+                return super.getPageTitle(position);
         }
     }
 }
